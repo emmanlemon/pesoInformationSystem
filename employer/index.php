@@ -1,0 +1,9 @@
+<?php 
+require_once("../include/initialize.php");
+ if(!isset($_SESSION['ADMIN_USERID'])){
+    redirect(web_root."employer/login.php");
+  }
+  else{
+    redirect(web_root."employer/index/");
+  }
+?>
