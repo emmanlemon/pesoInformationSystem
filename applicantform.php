@@ -130,10 +130,11 @@ if (!isset($_SESSION['APPLICANTID'])) {
               </div>
               <p class="error" id="errormessage" style="display: none ;">Password That You Input didnt match!</p>
               <div class="form-group">
-                  <input  class="form-control " id="DEGREE" name="DEGREE" placeholder="Educational Attainment"    onkeyup="javascript:capitalize(this.id, this.value);" >
-                
+                  <input  class="form-control " id="VERIFY_TOKEN" name="VERIFY_TOKEN" placeholder="Use this to Verify Your Account"    onkeyup="javascript:capitalize(this.id, this.value);" >
               </div>
-
+              <div class="form-group">
+                  <input  class="form-control " id="DEGREE" name="DEGREE" placeholder="Educational Attainment"    onkeyup="javascript:capitalize(this.id, this.value);" >
+              </div>
 
              <div class="form-group"> 
                  Attach your Resume here. 

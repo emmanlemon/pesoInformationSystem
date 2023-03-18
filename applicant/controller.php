@@ -22,7 +22,6 @@ switch ($action) {
 	case 'photos' :
 	doupdateimage();
 	break;
-
  
 	}
 
@@ -35,7 +34,7 @@ switch ($action) {
 		       redirect("index.php?view=accounts");
 
 		    }else{ 
-					$applicant =New Applicants(); 
+					$applicant = New Applicants(); 
 					$applicant->FNAME = $_POST['FNAME'];
 					$applicant->LNAME = $_POST['LNAME'];
 					$applicant->MNAME = $_POST['MNAME'];
@@ -46,6 +45,7 @@ switch ($action) {
 					$applicant->BIRTHPLACE = $_POST['BIRTHPLACE'];
 					$applicant->AGE = $age; 
 					$applicant->EMAILADDRESS = $_POST['EMAILADDRESS'];
+					$applicant->VERIFY_TOKEN = $_POST['VERIFY_TOKEN'];
 					$applicant->CONTACTNO = $_POST['TELNO'];
 					$applicant->DEGREE = $_POST['DEGREE'];
 					$applicant->update($_SESSION['APPLICANTID']);
